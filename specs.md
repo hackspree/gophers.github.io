@@ -5,7 +5,7 @@
 - The site serves a single landing page at the repository root.
 - The landing page shows the local logo image centered in the viewport.
 - The logo scales down on smaller screens without overflowing the viewport.
-- The page uses a plain background with a prominent rounded install command area for `curl -fsSL https://gophers.hackspree.com/install.sh | bash`, a visible Font Awesome copy icon for that command, and Discord plus GitHub icon links beneath the logo.
+- The page uses a plain background with a subtle rounded install command area for `curl -fsSL https://gophers.hackspree.com/install.sh | bash`, a visible Font Awesome copy icon for that command, and Discord plus GitHub icon links beneath the logo.
 - Font Awesome icons use a light grey default color and turn black on hover.
 - The surrounding non-logo controls are visually large, while the curl command text inside the install area stays intentionally small.
 - The document typography is limited to the local `Ioskeley` and `jikitourai.regular` font families, with `Ioskeley` as the primary face.
@@ -26,9 +26,9 @@
 - Define local `@font-face` rules for `jikitourai.regular` and `Ioskeley`.
 - Limit page `font-family` declarations to those two font family names, with `Ioskeley` listed first.
 - Center the logo and Discord link with CSS layout rules rather than fixed positioning.
-- Present the install command as a larger rounded copy/paste-ready call-to-action within the centered landing page stack.
+- Present the install command as a rounded copy/paste-ready call-to-action that wraps cleanly without scrollbars.
 - Pair the install command with a visible icon control that copies the exact command string.
-- Keep the install command container and icon actions visually larger than before while keeping the curl text itself much smaller inside the CTA.
+- Keep the install command container visually soft and low-contrast against the page background while avoiding command scrollbars.
 
 ## Constraints and invariants
 

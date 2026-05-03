@@ -55,9 +55,9 @@ img {
   width: 100%;
   max-width: 40rem;
   overflow: hidden;
-  border: 1px solid #f0f0f0;
+  border: 1px solid rgb(0 0 0 / 3%);
   border-radius: 1.25rem;
-  background: rgb(0 0 0 / 5%);
+  background: rgb(0 0 0 / 2%);
 }
 
 .install-command {
@@ -66,14 +66,15 @@ img {
   max-width: 100%;
   min-width: 0;
   padding: 1.25rem 1.5rem;
-  overflow-x: auto;
+  overflow: visible;
   border: 0;
   background: transparent;
-  color: #111111;
+  color: #4a4a4a;
   font-family: "Ioskeley", "jikitourai.regular";
   font-size: 0.45rem;
   line-height: 1.1;
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
 .copy-button {
@@ -84,7 +85,7 @@ img {
   height: auto;
   padding: 1.25rem 1.5rem;
   border: 0;
-  border-left: 1px solid rgb(0 0 0 / 6%);
+  border-left: 1px solid rgb(0 0 0 / 4%);
   background: transparent;
   color: #b8b8b8;
   cursor: pointer;
