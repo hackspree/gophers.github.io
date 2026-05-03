@@ -10,6 +10,7 @@
 - Keep asset URLs relative to the stylesheet location.
 - Style the install command as a readable copy/paste snippet in the landing page stack.
 - Style the Discord icon link as part of the centered landing page stack.
+- Use a light grey default icon color that shifts to black on hover and focus.
 
 ## Constraints and invariants
 
