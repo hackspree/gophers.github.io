@@ -7,6 +7,7 @@
 ## Implementation rules
 
 - Keep shared CSS in `assets/css/`.
+- Keep favicon assets in `assets/favicons/`.
 - Keep shared JavaScript in `assets/js/`.
 - Keep image assets in `assets/images/`.
 - Keep font assets in `assets/fonts/`.

@@ -47,13 +47,13 @@ img {
 }
 
 .install-command-row {
-  display: flex;
+  display: inline-flex;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0;
-  width: 100%;
-  max-width: 40rem;
+  width: fit-content;
+  max-width: min(100%, 40rem);
   overflow: hidden;
   border: 1px solid rgb(0 0 0 / 3%);
   border-radius: 1.25rem;

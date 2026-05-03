@@ -8,6 +8,7 @@
 - The page uses a plain background with a subtle rounded install command area for `curl -fsSL https://gophers.hackspree.com/install.sh | bash`, a visible Font Awesome copy icon for that command, and Discord plus GitHub icon links beneath the logo.
 - Font Awesome icons use a light grey default color and turn black on hover.
 - The surrounding non-logo controls are visually large, while the curl command text inside the install area stays intentionally small.
+- The browser tab uses a local favicon from the site assets.
 - The document typography is limited to the local `Ioskeley` and `jikitourai.regular` font families, with `Ioskeley` as the primary face.
 
 ## Implementation rules
@@ -18,6 +19,7 @@
 - Keep shared styling in `assets/css/site.css`.
 - Keep copy-button behavior in `assets/js/site.js`.
 - Store image assets under `assets/images/` and font assets under `assets/fonts/`.
+- Load dedicated local favicon assets from `assets/favicons/` in the root page head.
 - Reference the logo and fonts through relative paths from the root page.
 - Embed the Font Awesome Discord icon as inline SVG in the page markup.
 - Embed the Font Awesome GitHub icon as inline SVG in the page markup.
@@ -28,7 +30,7 @@
 - Center the logo and Discord link with CSS layout rules rather than fixed positioning.
 - Present the install command as a rounded copy/paste-ready call-to-action that wraps cleanly without scrollbars.
 - Pair the install command with a visible icon control that copies the exact command string.
-- Keep the install command container visually soft and low-contrast against the page background while avoiding command scrollbars.
+- Keep the install command container visually soft and low-contrast against the page background while sizing it to the command content and avoiding command scrollbars.
 
 ## Constraints and invariants
 
