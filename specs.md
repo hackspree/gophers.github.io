@@ -20,7 +20,7 @@
 - Keep shared styling in `assets/css/site.css`.
 - Keep copy-button behavior in `assets/js/site.js`.
 - Store image assets under `assets/images/` and font assets under `assets/fonts/`.
-- Load dedicated local favicon assets from `assets/favicons/` in the root page head.
+- Load the current dedicated local favicon assets from `assets/favicons/` in the root page head.
 - Reference the logo and fonts through relative paths from the root page.
 - Embed the Font Awesome Discord icon as inline SVG in the page markup.
 - Embed the Font Awesome GitHub icon as inline SVG in the page markup.

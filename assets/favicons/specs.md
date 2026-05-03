@@ -6,8 +6,7 @@
 
 ## Implementation rules
 
-- Store extracted favicon assets for the site in this directory.
-- Keep the favicon source archive in this directory if it is retained.
+- Store the current extracted favicon assets for the site in this directory.
 - Reference favicon files from the root page head with relative paths.
 
 ## Constraints and invariants
