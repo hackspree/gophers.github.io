@@ -30,9 +30,39 @@ body {
   font-family: "Ioskeley", "jikitourai.regular";
 }
 
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
 img {
   display: block;
   width: min(480px, 70vw);
   max-width: 100%;
   height: auto;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 999px;
+  color: #5865f2;
+  text-decoration: none;
+  transition: transform 120ms ease, opacity 120ms ease;
+}
+
+.social-link:hover,
+.social-link:focus-visible {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+.social-link svg {
+  width: 2rem;
+  height: 2rem;
 }
