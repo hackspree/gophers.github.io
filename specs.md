@@ -7,7 +7,7 @@
 - The logo scales down on smaller screens without overflowing the viewport.
 - The page uses a plain background with a compact install command `curl -fsSL https://gophers.hackspree.com/install.sh | bash`, a visible Font Awesome copy icon for that command, and Discord plus GitHub icon links beneath the logo.
 - Font Awesome icons use a light grey default color and turn black on hover.
-- All non-logo landing page elements are intentionally tiny relative to the logo.
+- All non-logo landing page elements are intentionally compact relative to the logo.
 - The document typography is limited to the local `Ioskeley` and `jikitourai.regular` font families, with `Ioskeley` as the primary face.
 
 ## Implementation rules
@@ -26,9 +26,9 @@
 - Define local `@font-face` rules for `jikitourai.regular` and `Ioskeley`.
 - Limit page `font-family` declarations to those two font family names, with `Ioskeley` listed first.
 - Center the logo and Discord link with CSS layout rules rather than fixed positioning.
-- Present the install command as a tiny copy/paste-ready snippet within the centered landing page stack.
+- Present the install command as a small copy/paste-ready snippet within the centered landing page stack.
 - Pair the install command with a visible icon control that copies the exact command string.
-- Keep the install command and icon actions at an especially small visual scale relative to the logo.
+- Keep the install command and icon actions compact relative to the logo.
 
 ## Constraints and invariants
 

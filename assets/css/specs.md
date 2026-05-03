@@ -8,10 +8,10 @@
 
 - Store the landing page stylesheet as `site.css`.
 - Keep asset URLs relative to the stylesheet location.
-- Style the install command as a tiny readable copy/paste snippet in the landing page stack.
+- Style the install command as a small readable copy/paste snippet in the landing page stack.
 - Style the Discord and GitHub icon links as part of the centered landing page stack.
 - Use a light grey default icon color that shifts to black on hover and focus.
-- Keep the non-logo controls visually tiny compared with the logo.
+- Keep the non-logo controls visually compact compared with the logo.
 
 ## Constraints and invariants
 
