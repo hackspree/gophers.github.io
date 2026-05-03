@@ -1,13 +1,13 @@
 const copyButton = document.querySelector("[data-copy-install]");
 
 if (copyButton) {
-  const defaultLabel = copyButton.textContent.trim();
+  const defaultLabel = copyButton.getAttribute("aria-label") ?? "Copy install command";
   const command = copyButton.getAttribute("data-copy-text") ?? "";
   let resetTimerId;
 
   const setLabel = (label) => {
-    copyButton.textContent = label;
     copyButton.setAttribute("aria-label", label);
+    copyButton.setAttribute("title", label);
   };
 
   const resetLabel = () => {

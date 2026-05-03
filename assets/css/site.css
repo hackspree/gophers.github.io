@@ -48,48 +48,54 @@ img {
 
 .install-command-row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
-  gap: 0.75rem;
-  width: 100%;
+  gap: 0.5rem;
+  width: auto;
+  max-width: min(100%, 34rem);
 }
 
 .install-command {
   display: block;
-  flex: 1 1 30rem;
+  flex: 1 1 auto;
   max-width: 100%;
   min-width: 0;
-  padding: 0.875rem 1rem;
+  padding: 0.5rem 0.75rem;
   overflow-x: auto;
   border: 1px solid #d8d8d8;
-  border-radius: 0.75rem;
+  border-radius: 0.625rem;
   background: #f7f7f7;
   color: #111111;
   font-family: "Ioskeley", "jikitourai.regular";
-  font-size: 0.95rem;
-  line-height: 1.5;
+  font-size: 0.78rem;
+  line-height: 1.35;
   white-space: nowrap;
 }
 
 .copy-button {
-  padding: 0.875rem 1rem;
-  border: 1px solid #111111;
-  border-radius: 0.75rem;
-  background: #ffffff;
-  color: #111111;
-  font-family: "Ioskeley", "jikitourai.regular";
-  font-size: 0.95rem;
-  line-height: 1.5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #b8b8b8;
   cursor: pointer;
-  transition: background 120ms ease, color 120ms ease, transform 120ms ease;
+  transition: color 120ms ease, transform 120ms ease;
 }
 
 .copy-button:hover,
 .copy-button:focus-visible {
-  background: #111111;
-  color: #ffffff;
+  color: #000000;
   transform: translateY(-1px);
+}
+
+.copy-button svg {
+  width: 1rem;
+  height: 1rem;
 }
 
 .social-link {
