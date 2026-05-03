@@ -46,9 +46,20 @@ img {
   height: auto;
 }
 
+.install-command-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+}
+
 .install-command {
   display: block;
+  flex: 1 1 30rem;
   max-width: 100%;
+  min-width: 0;
   padding: 0.875rem 1rem;
   overflow-x: auto;
   border: 1px solid #d8d8d8;
@@ -59,6 +70,26 @@ img {
   font-size: 0.95rem;
   line-height: 1.5;
   white-space: nowrap;
+}
+
+.copy-button {
+  padding: 0.875rem 1rem;
+  border: 1px solid #111111;
+  border-radius: 0.75rem;
+  background: #ffffff;
+  color: #111111;
+  font-family: "Ioskeley", "jikitourai.regular";
+  font-size: 0.95rem;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: background 120ms ease, color 120ms ease, transform 120ms ease;
+}
+
+.copy-button:hover,
+.copy-button:focus-visible {
+  background: #111111;
+  color: #ffffff;
+  transform: translateY(-1px);
 }
 
 .social-link {

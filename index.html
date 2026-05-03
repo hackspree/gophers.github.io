@@ -5,11 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gophers</title>
   <link rel="stylesheet" href="./assets/css/site.css">
+  <script src="./assets/js/site.js" defer></script>
 </head>
 <body>
   <main class="hero">
     <img src="./assets/images/logo.png" alt="Gophers logo">
-    <code class="install-command">curl -fsSL https://gophers.hackspree.com/install.sh | bash</code>
+    <div class="install-command-row">
+      <code class="install-command">curl -fsSL https://gophers.hackspree.com/install.sh | bash</code>
+      <button
+        class="copy-button"
+        type="button"
+        data-copy-install
+        data-copy-text="curl -fsSL https://gophers.hackspree.com/install.sh | bash"
+        aria-label="copy"
+      >
+        copy
+      </button>
+    </div>
     <a
       class="social-link"
       href="https://discord.com/channels/1308701315563786290/1500505319036420157"
