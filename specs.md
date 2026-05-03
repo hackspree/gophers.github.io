@@ -6,8 +6,9 @@
 - The landing page shows the local logo image centered in the viewport.
 - The logo scales down on smaller screens without overflowing the viewport.
 - The page uses a plain background with a subtle rounded install command area for `curl -fsSL https://gophers.hackspree.com/install.sh | bash`, a visible Font Awesome copy icon for that command, and Discord plus GitHub icon links beneath the logo.
-- Font Awesome icons use a light grey default color and turn black on hover.
+- Font Awesome icons use a light grey default color, turn black on hover, and share the same rendered size.
 - The surrounding non-logo controls are visually large, while the curl command text inside the install area stays intentionally small.
+- The logo is rendered at a much larger size than before while remaining responsive.
 - The browser tab uses a local favicon from the site assets.
 - The document typography is limited to the local `Ioskeley` and `jikitourai.regular` font families, with `Ioskeley` as the primary face.
 
@@ -25,9 +26,11 @@
 - Embed the Font Awesome GitHub icon as inline SVG in the page markup.
 - Embed the Font Awesome copy icon as inline SVG in the install command control.
 - Style Font Awesome icons with a neutral grey-to-black hover palette.
+- Keep all Font Awesome icons at the same rendered size.
 - Define local `@font-face` rules for `jikitourai.regular` and `Ioskeley`.
 - Limit page `font-family` declarations to those two font family names, with `Ioskeley` listed first.
 - Center the logo and Discord link with CSS layout rules rather than fixed positioning.
+- Render the logo at roughly double its earlier size while still clamping to the viewport.
 - Present the install command as a rounded copy/paste-ready call-to-action that wraps cleanly without scrollbars.
 - Pair the install command with a visible icon control that copies the exact command string.
 - Keep the install command container visually soft and low-contrast against the page background while sizing it to the command content and avoiding command scrollbars.
