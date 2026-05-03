@@ -35,6 +35,8 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
+  width: min(100%, 52rem);
+  padding: 1.5rem;
 }
 
 img {
@@ -42,6 +44,21 @@ img {
   width: min(480px, 70vw);
   max-width: 100%;
   height: auto;
+}
+
+.install-command {
+  display: block;
+  max-width: 100%;
+  padding: 0.875rem 1rem;
+  overflow-x: auto;
+  border: 1px solid #d8d8d8;
+  border-radius: 0.75rem;
+  background: #f7f7f7;
+  color: #111111;
+  font-family: "Ioskeley", "jikitourai.regular";
+  font-size: 0.95rem;
+  line-height: 1.5;
+  white-space: nowrap;
 }
 
 .social-link {
