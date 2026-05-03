@@ -2,15 +2,16 @@
 
 ## User-facing behavior
 
-- The landing page styling in this directory supports the centered logo, install command, and Discord link layout.
+- The landing page styling in this directory supports the centered logo, install command, and Discord/GitHub link layout.
 
 ## Implementation rules
 
 - Store the landing page stylesheet as `site.css`.
 - Keep asset URLs relative to the stylesheet location.
 - Style the install command as a compact readable copy/paste snippet in the landing page stack.
-- Style the Discord icon link as part of the centered landing page stack.
+- Style the Discord and GitHub icon links as part of the centered landing page stack.
 - Use a light grey default icon color that shifts to black on hover and focus.
+- Keep the non-logo controls visually much smaller than the logo.
 
 ## Constraints and invariants
 
